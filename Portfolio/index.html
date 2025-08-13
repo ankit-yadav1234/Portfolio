@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Image/pic_3.jpg" type="image/jpeg" />
+    <script
+      src="https://kit.fontawesome.com/d44c3d82bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container">
+        <nav>
+          <img src="Image/logo_1.jpg" alt="Ankit Yadav Logo" />
+          <ul id="sidemenu">
+            <li><a href="#header" onclick="closemenu()">Home</a></li>
+            <li><a href="#about" onclick="closemenu()">About</a></li>
+            <li><a href="#services" onclick="closemenu()">Services</a></li>
+            <li><a href="#portfolio" onclick="closemenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closemenu()">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Android Developer..</p>
+          <h1>Hi, I'm <span>Ankit Yadav</span><br />From India</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="Image/about.jpeg" alt="Ankit Yadav Photo" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+        <p>
+           Hi, I'm someone who loves blending creativity with functionality.
+           With a growing passion for design and development, I'm always
+           exploring new ways to bring ideas to life—whether through crafting
+           immersive web experiences or building impactful digital projects.
+           I'm inspired by the beauty of simplicity and constantly driven to
+           learn, adapt, and create work that genuinely connects with people.
+</p>
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills', event)"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience', event)">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education', event)">
+                Education
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Developing websites</li>
+                <li>
+                  <span>App Development</span><br />Building Android /iOS apps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+             <li><span>2025 - Present</span><br />Designing Web and App Interfaces</li>
+             <li><span>Web Development</span><br />Built responsive websites and participated in team-based development projects.</li>
+             <li><span>1 Year</span><br />Led a small team in developing mobile applications during college projects.</li>
+                </ul>
+               
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+  <li><span>College, 2022-2025</span><br />B.Sc. in Computer Science — Chandigarh University</li>
+  <li><span>May 15 - July 10, 2024</span><br />Completed Industrial Training in Software Development</li>
+  <li><span>Mobile Development Training</span><br />iOS/Android Development</li>
+</ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Design and build responsive, modern websites using HTML, CSS, JavaScript, and popular frameworks like React and Bootstrap.</p>
+       
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Design</h2>
+            <p>Create user-friendly interfaces and engaging experiences through research, wireframing, and interactive prototyping.</p>
+       <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Design</h2>
+            <p>Design intuitive mobile app interfaces and flows for Android and iOS, focusing on usability, performance, and aesthetics.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="Image/music_1.jpg.jpg" alt="Music Player Screenshot" />
+            <img src="Image/music_2jpg.jpg" alt="" />
+            <div class="layer">
+              <h3>Music Player App</h3>
+              <p>
+                Music Player — Android, Kotlin — Developed a lightweight Android music player app in Kotlin featuring local audio playback.
+Implemented file access permissions, media control (play/pause/next/previous), and real-time UI updates using the MediaPlayer API and View Binding.
+Focused on responsive design and optimized media handling to enhance the user experience.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Image/Instagram clone image_page-0001.jpg" alt="Instagram Clone Screenshot" />
+            <img src="Image/Instagram clone image_page-0002.jpg" alt="" />
+            <div class="layer">
+              <h3>Instagram Clone App</h3>
+              <p>
+                        This project replicates the core functionalities of Instagram using Kotlin and Firebase. It allows user authentication, profile creation, image uploads, and post sharing — all in real-time.
+        The app integrates Firebase Authentication, Cloud Firestore, and Firebase Storage for backend services.
+        Key Contributions: Developed a functional Instagram clone app with Kotlin and Firebase. Features include user sign-up/login with Firebase Authentication, real-time feed updates using Firestore, and media uploads with Firebase Storage. Designed the UI for profile management and post interaction, ensuring a smooth UX across devices.
+                      </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="Image/Pic_1.jpeg" alt="Event Management App" />
+            <div class="layer">
+              ></a>
+              <h3>Event Management App</h3>
+              <p>EventHub is an Android app developed using Kotlin that facilitates event management and social interaction. Users can create, discover, and engage with events while connecting with others. The app leverages Firebase for backend services and integrates real-time features with a modular architecture and intuitive UI, including authentication, event creation, social interactions, and responsive design components.</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> ankitybarahi@gmail.com</p><br>
+            <p><i class="fa-solid fa-phone"></i> 7084483205</p>
+            <div class="social-icons">
+              
+              <a href="https://www.linkedin.com/in/ankit-yadav-4b1b25266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/ankit.one9?igsh=bWVpZnJ2cHBva212"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/1ALQe4Qz5H/"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <a href="Image/RESUME.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <footer class="copyright">
+        <p>
+           © 2025 • Ankit Yadav <i class="fa-solid fa-heart"></i>
+        </p>
+      </footer>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+      const tablinks = document.getElementsByClassName("tab-links");
+      const tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname, event) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      const sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyZ6SFuA2KCuJtclvv_rMu32tzs_RvlVltKR7vLx34Sbhc2HsVP9dFY6GYfY8do9CIc/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(() => (msg.innerHTML = ""), 5000);
+            form.reset();
+          })
+          .catch((error) => {
+            msg.innerHTML = "Error sending message.";
+            console.error("Error!", error.message);
+          });
+      });
+    </script>
+  </body>
+</html>
